@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form com Css e html</title>
+    <style>
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #4caf50;
+            width: 100%;
+            padding: 14px 20px;
+            margin: 8px 0;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a047;
+        }
+
+        div {
+            border-radius: 5px;
+            padding: 20px;
+            background-color: rgba(228, 215, 215, 0.507);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Usando Css e html no form </h3>
+
+    <div>
+        <form action="/action page.php">
+            <label for="fname">first Name</label>
+            <input type="text" id="fname" name="first name" placeholder="Your name..">
+
+            <label for="lname">last Name</label>
+            <input type="text" id="lname" name="last name" placeholder="Your Last name..">
+
+            <label for="country">country</label>
+            <select id="country" name="country">
+                <option value="Brasil">Brasil</option>
+                <option value="Espanha">Espanha</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Portugal">Portugal</option>
+            </select>
+            <input type="submit" value="submit">
+        </form>
+
+    </div>
+</body>
+
+</html>
